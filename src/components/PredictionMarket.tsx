@@ -46,7 +46,7 @@ export function PredictionMarket() {
     {
       id: 2,
       name: "Marcus Kim",
-      title: "AI Startup Founder",
+      title: "Founder",
       description: "Building next-gen ML tools, former Google engineer, Y Combinator alum",
       image: "https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZGV2ZWxvcGVyJTIwY29kaW5nJTIwcHJvZ3JhbW1lcnxlbnwxfHx8fDE3NTgzOTg5NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       category: "Tech",
@@ -61,8 +61,8 @@ export function PredictionMarket() {
     },
     {
       id: 3,
-      name: "Luna Chen",
-      title: "Digital Artist",
+      name: "TOBI",
+      title: "Python dev",
       description: "NFT artist with unique style, growing collector base, gallery exhibitions",
       image: "https://images.unsplash.com/photo-1740663173325-c3000e33c830?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHdyaXRlciUyMGFydGlzdCUyMGZlbWFsZXxlbnwxfHx8fDE3NTgzOTg5NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       category: "Art",
@@ -77,8 +77,8 @@ export function PredictionMarket() {
     },
     {
       id: 4,
-      name: "David Rodriguez",
-      title: "Indie Game Developer",
+      name: "David",
+      title: "Game Developer",
       description: "Solo developer creating innovative indie games, growing Steam following",
       image: "https://images.unsplash.com/photo-1562583616-e8a045ed56e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMGVudHJlcHJlbmV1ciUyMHN0YXJ0dXAlMjBmb3VuZGVyfGVufDF8fHx8MTc1ODM5ODk0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       category: "Gaming",
@@ -96,7 +96,7 @@ export function PredictionMarket() {
   const myPredictions = [
     {
       id: 1,
-      name: "Amara Okafor",
+      name: "Tobi",
       prediction: "Will hit 1M followers by 2025",
       invested: "0.5 ETH",
       currentOdds: "3.2x",
@@ -106,7 +106,7 @@ export function PredictionMarket() {
     },
     {
       id: 2,
-      name: "Marcus Kim", 
+      name: "IG", 
       prediction: "Will raise $10M Series A by Q2 2025",
       invested: "1.0 ETH",
       currentOdds: "2.8x",
