@@ -8,10 +8,10 @@ export function Navigation() {
 
   const navItems = [
     { path: '/', label: 'Home', icon: TrendingUp },
-    { path: '/marketplace', label: 'Marketplace', icon: Users },
-    { path: '/mint', label: 'Mint Bond', icon: Coins },
-    { path: '/portfolio', label: 'Portfolio', icon: PieChart },
-    { path: '/predictions', label: 'Fame Chain', icon: Target },
+    { path: '/discover', label: 'Discover', icon: Users },
+    { path: '/talent/new', label: 'Raise', icon: Coins },
+    { path: '/dashboard/investor', label: 'Portfolio', icon: PieChart },
+    { path: '/predictions', label: 'Markets', icon: Target },
     { path: '/dashboard', label: 'Dashboard', icon: BarChart3 },
   ];
 
@@ -19,7 +19,7 @@ export function Navigation() {
     <motion.nav 
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-purple-500/20"
+      className="fixed top-0 w-full z-50 bg-[color:var(--surface)] border-b"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -28,10 +28,10 @@ export function Navigation() {
               className="flex items-center space-x-2"
               whileHover={{ scale: 1.05 }}
             >
-              <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-                <TrendingUp className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-[color:var(--surface-raised)] border">
+                <TrendingUp className="w-5 h-5 text-[color:var(--accent)]" />
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="text-xl font-bold tracking-tight">
                 UpNext
               </span>
             </motion.div>
@@ -45,10 +45,10 @@ export function Navigation() {
               return (
                 <Link key={item.path} to={item.path}>
                   <motion.div
-                    className={`flex items-center space-x-1 px-3 py-2 rounded-lg transition-colors ${
+                    className={`flex items-center space-x-1 px-3 py-2 rounded-full border transition-colors ${
                       isActive 
-                        ? 'bg-purple-600/20 text-purple-400' 
-                        : 'text-gray-300 hover:text-white hover:bg-white/5'
+                        ? 'bg-[color:var(--surface-raised)] text-[color:var(--text-primary)] border-[color:var(--border-active)]'
+                        : 'text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] hover:bg-[color:var(--surface-raised)]'
                     }`}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -62,11 +62,11 @@ export function Navigation() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="border-purple-500/30 text-purple-400 hover:bg-purple-500/10">
-              Connect Wallet
+            <Button asChild variant="outline" size="sm">
+              <Link to="/auth?tab=wallet">Connect Wallet</Link>
             </Button>
-            <Button size="sm" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-              Sign Up
+            <Button asChild size="sm">
+              <Link to="/auth?tab=signup">Create Account</Link>
             </Button>
           </div>
         </div>
